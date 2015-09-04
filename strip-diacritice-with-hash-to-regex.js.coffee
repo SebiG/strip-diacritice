@@ -1,4 +1,4 @@
-window.mapDiacriticeConv_lower_case = 
+mapDiacriticeConv_lower_case = 
   "ă" : "a"
   "â" : "a"
   "î" : "i"
@@ -7,7 +7,7 @@ window.mapDiacriticeConv_lower_case =
   "ț" : "t"
   "ţ" : "t"
 
-window.mapDiacriticeConv_caps = 
+mapDiacriticeConv_caps = 
   "Ă" : "A"
   "Â" : "A"
   "Î" : "I"
