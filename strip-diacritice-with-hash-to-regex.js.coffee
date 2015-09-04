@@ -16,7 +16,7 @@ mapDiacriticeConv_caps =
   "Ț" : "T"
   "Ţ" : "T"
 
-
+#return lowercase string if second argument is true (func(string[, boolean]))
 strip = (str, case_insensitive_boolean = false) ->
   lowercase_replace = (str_lowercase) ->
     for k, v of mapDiacriticeConv_lower_case
@@ -34,6 +34,9 @@ strip = (str, case_insensitive_boolean = false) ->
     with_caps_case_replace(str)
 
 
+
+
+# teste
 test_string = "ă, â, î, ș, ş, ț, ţ, â, Ă, Â, Î, Ș, Ț, Ş, Ţ"
 caps_exit = "a, a, i, s, s, t, t, a, A, A, I, S, T, S, T"
 lowercase_exit = "a, a, i, s, s, t, t, a, a, a, i, s, t, s, t"
