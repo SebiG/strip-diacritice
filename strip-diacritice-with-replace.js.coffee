@@ -1,4 +1,4 @@
-strip = (str, case_insensitive_boolen = false) ->
+strip = (str, case_insensitive_boolean = false) ->
   lowercase_replace = (str_lowercase) ->
     str_lowercase
       .replace(/ă/g,"a")
@@ -15,7 +15,7 @@ strip = (str, case_insensitive_boolen = false) ->
       .replace(/Ș/g, "S").replace(/Ş/g,"S")
       .replace(/Ț/g, "T").replace(/Ţ/g,"T")
 
-  if case_insensitive_boolen == true
+  if case_insensitive_boolean == true
     lowercase_replace(str.toLowerCase())
   else
     with_caps_case_replace(str)
