@@ -15,7 +15,7 @@ strip = (str, case_insensitive_boolean = false) ->
       .replace(/Ș/g, "S").replace(/Ş/g,"S")
       .replace(/Ț/g, "T").replace(/Ţ/g,"T")
 
-  if case_insensitive_boolean == true
+  if case_insensitive_boolean is true
     lowercase_replace(str.toLowerCase())
   else
     with_caps_case_replace(str)
